@@ -662,24 +662,24 @@ hi def link IsabelleComment Comment
 hi def link IsabelleCommentStart Comment
 hi def link IsabelleCommentContent Comment
 
-hi IsabelleCommand           ctermfg=3 cterm=bold guifg=yellow gui=bold
-hi IsabelleCommandPart       ctermfg=3 cterm=none guifg=yellow
-hi IsabelleCommandMod        ctermfg=3 cterm=none guifg=yellow
-hi IsabelleInnerMarker       ctermfg=1 cterm=none guifg=red
-hi IsabelleSpecial           ctermfg=5 cterm=none guifg=magenta
-hi IsabelleCommandProofProve ctermfg=2 cterm=none guifg=green
-hi IsabelleCommandProofIsar  ctermfg=2 cterm=none guifg=green
-hi IsabelleGoalProofIsar     ctermfg=3 cterm=none guifg=yellow
-hi IsabelleCommandProofDone  ctermfg=2 cterm=bold guifg=green gui=bold
-hi IsabelleCommandProofFail  ctermfg=1 cterm=bold guifg=red   gui=bold
-hi IsabelleCommandProofBad   ctermfg=1 cterm=none guifg=red
-hi IsabelleCommandRule       ctermfg=7 cterm=bold guifg=white gui=bold
-hi IsabelleCommandRuleMod    ctermfg=6 cterm=none guifg=cyan
-hi IsabelleCommandMethod     ctermfg=6 cterm=none guifg=cyan
-hi IsabelleCommandMethodMod  ctermfg=6 cterm=none guifg=cyan
-hi IsabelleCommandBigMethod  ctermfg=6 cterm=bold guifg=cyan gui=bold
+hi def link IsabelleCommand           Statement
+hi def link IsabelleCommandPart       Statement
+hi def link IsabelleCommandMod        Keyword
+hi def link IsabelleInnerMarker       String
+hi def link IsabelleSpecial           Special
+hi def link IsabelleCommandProofProve Statement
+hi def link IsabelleCommandProofIsar  Statement
+hi def link IsabelleGoalProofIsar     Statement
+hi def link IsabelleCommandProofDone  Label
+hi def link IsabelleCommandProofFail  Error
+hi def link IsabelleCommandProofBad   Debug
+hi def link IsabelleCommandRule       Constant
+hi def link IsabelleCommandRuleMod    Constant
+hi def link IsabelleCommandMethod     Function
+hi def link IsabelleCommandMethodMod  Function
+hi def link IsabelleCommandBigMethod  Function
 
-hi Normal guibg=black guifg=grey
+"hi Normal guibg=black guifg=grey
 
 " Jedit-style autocompletion. This is off by default because it can
 " significantly slow Vim down. To use this functionality, put something like
